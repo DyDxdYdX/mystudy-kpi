@@ -1,0 +1,293 @@
+/*===========================================
+  For all page
+===========================================*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    background-color: #f1f1f1;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+footer{
+	text-align: center;
+	font-size: 14px;
+    flex: auto;
+    margin-left: 170px;
+}
+
+h2{
+    text-align: left; 
+    font-size:30px;
+}
+
+.header{
+    background: url('../img/banner.png') center/cover no-repeat;
+    height: 300px;
+    color: #f1f1f1;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-left: 170px;
+}
+
+/*===========================================
+  Navigation
+===========================================*/
+.sidenav {
+    height: 100%;
+    width: 170px;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    text-align: left;
+    padding-top: 300px;
+}
+  
+.sidenav a {
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav a.active{
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/*===========================================
+  Images
+===========================================*/
+.imgcontainer {
+	text-align: center;
+}
+.avatar {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 24px;
+}
+.image {
+    width: 300px;
+	height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*===========================================
+  Container (login page)
+===========================================*/
+.container {
+	max-width: 300px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin: auto;
+}
+.container button{
+	background-color: #04AA6D;
+	color: white;	
+	padding: 13px 115px;
+	width: 300px;
+	border: none; 
+}
+.container input[type="text"],
+.container input[type="password"]{
+	text-align: left;
+	padding: 13px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 276px;
+}
+.background-container {
+    background-color: #f2f2f2; 
+    height: 45px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===========================================
+ Table
+===========================================*/
+#projectable {
+    border-collapse: collapse;
+    width: 100%;
+}
+#projectable th {
+    border: 1px solid #616161;
+    padding: 8px;
+}
+#projectable td {
+    border: 1px solid #616161;
+    padding: 8px;
+}
+#projectable tr:nth-child(even){background-color: #ddd;}
+#projectable tr:hover {background-color: #C8B4BA;}
+#projectable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #216f76;
+	color: white;
+}
+#projectable td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: black;
+}
+
+/*===========================================
+  User Register (login page)
+===========================================*/
+#registerDiv input, #registerDiv select, #registerDiv textarea{
+	text-align: left;
+	padding: 8px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 45%;
+}
+#registerDiv input[type=submit],#registerDiv input[type=reset]{
+	background-color: #f2f2f2;
+	color: black;	
+	padding: 15px;
+	border: none;
+	width: 10%; 
+}
+#registerDiv button{
+    width: 100px;
+    padding: 10px;
+}
+#matricNo{
+	text-align: left;
+}
+
+
+/*===========================================
+  kpi navigation
+===========================================*/
+.row-kpi{
+    display: flex;
+	flex-wrap: wrap; 
+    margin-left: 170px;
+}
+
+.row-kpi ul{
+    list-style-type: none;
+    background-color: #144246;
+    width: 100%;
+    padding: 15px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.row-kpi li{
+    float: left;
+    width: 25%;
+}
+
+.row-kpi li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.row-kpi li a:hover {
+    color: #f1f1f1;
+}
+
+.row-kpi li a.active{
+    background-color: #f1f1f1;
+    color: #144246;
+    border-radius: 15px;
+}
+
+/*===========================================
+  Responsive
+===========================================*/
+.row {
+	display: flex;
+	flex-wrap: wrap; 
+    margin-left: 170px;
+}
+
+.col-left {
+	flex: 20%;
+	padding: 15px;
+    text-align: center;
+}
+.col-right {
+	flex: 70%;
+	padding: 15px 20px 15px 15px; 
+}
+
+.col-right table td {
+    padding: 15px;
+	height: 30px;
+}
+
+/*===========================================
+  kpi indicator
+===========================================*/
+#kpi{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 170px;
+}
+
+/*===========================================
+  form
+===========================================*/
+#form{
+    margin-left: 170px;
+    display: none;
+}
+
+#form table{	
+	border-collapse: collapse;
+	width: 50%;
+	padding-left: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#form input[type="submit"], 
+	input[type="reset"], input[type="button"]{
+	padding: 15px 32px;
+	cursor: pointer;
+}
+
+#form select{
+	padding: 5px;
+}
+
+#form input[type="text"]{
+	padding: 5px;
+}	
+
+#form textarea{
+	width:95%;
+	padding: 5px;
+}
+
+#form td, #form th {
+	border: 1px solid #616161;
+	padding: 8px;
+}
